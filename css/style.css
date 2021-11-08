@@ -1,0 +1,20 @@
+body {
+background-image: url('../smyleapp-ui/Images/wbg.jpg');
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: 100%;
+}
+.dd{
+  margin: 30px;
+  height: 300px;
+  width: 300px;
+
+}
+.d{
+  margin-right: 20px;
+  margin-top: 5px;
+  height: 70px;
+}
+.left{
+  margin-left: 15px;
+}
