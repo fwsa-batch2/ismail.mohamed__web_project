@@ -1,14 +1,35 @@
-.dd{
+.bg{
+  background-image: url('../Images/bg.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
+  }
+
+.img{
   margin: 30px;
   height: 300px;
   width: 300px;
-
+  border-radius: 25px;
 }
-.d{
+
+.img:hover{
+  box-shadow: 6px 6px 8px #d3d3d3;
+}
+
+.head{
+  margin: 30px;
+  height: 300px;
+  width: 300px;
+  border-radius: 25px;
+}
+
+.icon{
   margin-right: 20px;
   margin-top: 5px;
   height: 70px;
 }
-.left{
-  margin-left: 15px;
+
+
+a{
+   text-decoration: none;
 }
