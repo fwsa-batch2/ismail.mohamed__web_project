@@ -10,10 +10,14 @@
   height: 300px;
   width: 300px;
   border-radius: 25px;
+  transition: .4s;
 }
 
 .img:hover{
   box-shadow: 6px 6px 8px #d3d3d3;
+  height: 304px;
+  width: 304px;
+
 }
 
 .head{
