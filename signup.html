@@ -1,56 +1,40 @@
 <html>
   <head>
-    <title>Smyle Signup</title>
+    <title>Smyle Sign up</title>
     <link rel="stylesheet" href="./css/style.css">
-
- <br><br>
- <label>
-   <font size="4" color="Black">Already Have An Account,
-   </label>
-   <a href="login.html" >Log In</a>
   </head>
 
-   <link rel="stylesheet" href="../smyleapp-ui/css/style.css">
-
-  <center>
     <body class="bg">
-      <h1><font face="Arial" size="20">SMYLE</font></h1>
-       <p><font face="oxbot" size="5">Style With A Smile</font></p>
+      <div class="box">
+        <img src="./Images/signup.png" alt="" id="signin">
+        <span class="signin">
+          <p class="text-head">Sign up</p>
+          <p class="text-shead up">Already have an account? <a href="signin.html">Sign in</a></p>
+          <form class="" action="index.html" method="post">
+            <input type="text" name="" value="" placeholder="Username" class="textbox" required>
+            <br>
+            <input type="text" name="" value="" placeholder="Mail ID" class="textbox" required>
+            <br>
+            <input type="password" name="" value="" placeholder="Password" class="textbox" required>
+            <br>
+            <input type="password" name="" value="" placeholder="Confirm Password" class="textbox" required>
+            <br>
+            <input type="checkbox" name="" value="" style="margin-left: 20px; margin-top: 30px;" required>
+            <label style="font-size: 12px;">I agree to the Smyle
+              <a href="#">Terms of Use</a>
+               and
+              <a href="#">Privacy Policy</a>.
+            </label>
 
-    <form>
-     <table style="height:220px;" bgcolor="whitesmoke" >
-      <br><br><br><br><br>
-      <img src="../smyleapp-ui/Images/profile.png"  height="150" alt="">
+            <br>
+            <input type="submit" name="" value="Create account" class="button-up">
+
+          </form>
 
 
-      <tr>
-        <td>
-          <input type="text" name="uname" value="" placeholder="User Name">
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <input type="text" name="mail" value="" placeholder="E-mail">
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <input type="password" name="pswrd" value="" placeholder="Password">
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <input type="password" name="cpswrd" value="" placeholder="Confirm Password">
-        </td>
-      </tr>
-      <tr>
-        <td align="center"><input align="center" type="button" name="button" value="Sign Up">
-        </td>
-      </tr>
-      <br><br>
-     </table>
-    </form>
+        </span>
 
+      </div>
    </body>
  </center>
 </html>
