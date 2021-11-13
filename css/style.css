@@ -1,17 +1,11 @@
 
 .bg{
-  background-image: url('../Images/bg.png');
+  background-image: url('../Images/bg.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100%;
   }
 
-.dbg1{
-  background-image: url('../Images/bg.gif');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 100%;
-}
 
 .top{
   position: fixed;
@@ -87,7 +81,11 @@
     background-color: #f0f0f0;
 }
 
-
+#signin{
+  height: 600px;
+  margin: 40px;
+  opacity: 1;
+}
 
 .img{
   margin-left: 30px;
@@ -112,9 +110,11 @@
   border-radius: 25px;
   font-family: sans-serif;
   font-size: 35px;
+  color: #202020;
 }
 
 .icon{
+  margin-left: 20px;
   margin-right: 20px;
   margin-top: 20px;
   height: 50px;
@@ -123,14 +123,65 @@
 
 a{
    text-decoration: none;
+   color: #129EFF;
 }
 
 .box{
-  background-color: Black;
+  background-color: white;
+  width: 1200px;
+  height: 660px;
+  margin-top: 155px;
+  margin-left: 315px;
+  border-radius: 20px;
+}
+
+.signin{
+  margin-top: 20px;
+  position: absolute;
+}
+
+p.text-head{
+  margin-left: 0px;
+  font-size: 30px;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+p.text-shead{
+  margin-left: 0px;
+  font-size: 15px;
+  font-family: sans-serif;
+  margin-bottom: 40px;
+}
+
+.textbox{
+  border-radius: 20px;
+  margin-top: 40px;
+  height: 50px;
   width: 400px;
-  height: 550px;
-  margin-left: 700px;
-  margin-top: 250px;
-  border-radius: 30px;
-  opacity: 0.3;
+  border-style: none;
+  background-color: #f0f0f0;
+  font-size: 18px;
+  top: 0px;
+  padding: 20px;
+}
+
+.button{
+  border-radius: 20px;
+  background-color: #129EFF;
+  border-style: none;
+  height: 42px;
+  width: 110px;
+  font-size: 18px;
+  padding: 10px;
+  margin-left: 288px;
+  margin-top: 30px;
+  color: white;
+  font-weight: bold;
+}
+
+.link-icon{
+  height: 30px;
+  margin-top: 50px;
+  margin-left: 75px;
 }
