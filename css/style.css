@@ -8,6 +8,9 @@
   background-size: 100%;
   }
 
+.bg.tc{
+  background-image: url('../Images/tc bg.jpg');
+}
 
 .top{
   position: fixed;
@@ -83,10 +86,21 @@
     background-color: #f0f0f0;
 }
 
-#signin{
+#side-in{
+  height: 600px;
+  margin: 40px;
+}
+
+#side-up{
   height: 600px;
   margin: 40px;
   opacity: 1;
+}
+
+#side-tc{
+  position: absolute;
+  height: 600px;
+  margin-top: 90px;
 }
 
 .img{
@@ -100,8 +114,6 @@
 
 .img:hover{
   box-shadow: 10px 10px   15px #B7B7B7 ;
-  height: 302px;
-
 
 }
 
@@ -114,13 +126,18 @@
   color: #202020;
 }
 
-.icon{
+.icon-h{
   margin-left: 20px;
   margin-right: 20px;
   margin-top: 20px;
   height: 50px;
 }
 
+.icon{
+  margin-left: 10px;
+  margin-top: 6px;
+  height: 50px;
+}
 
 a{
    text-decoration: none;
@@ -131,9 +148,36 @@ a{
   background-color: white;
   width: 1200px;
   height: 660px;
-  margin-top: 155px;
+  margin-top: 100px;
   margin-left: 315px;
   border-radius: 20px;
+}
+
+.tcbox{
+  background-color: white;
+  width: 1500px;
+  height: 760px;
+  margin-top: 70px;
+  margin-left: 175px;
+  border-radius: 20px;
+}
+
+.tac{
+  position: absolute;
+  margin-top: 45px;
+  margin-left: 584px;
+  height:630px;
+  width: 900px;
+  overflow: auto;
+}
+
+#terms{
+  position: absolute;
+  font-size: 50px;
+  font-weight: bolder;
+  color: white;
+  margin-top: -20px;
+  margin-left: 650px;
 }
 
 .signin{
@@ -177,8 +221,8 @@ p.text-shead.up{
   width: 110px;
   font-size: 18px;
   padding: 10px;
-  margin-left: 288px;
-  margin-top: 30px;
+  margin-left: 188px;
+  margin-top: 28px;
   color: white;
   font-weight: bold;
 }
@@ -197,6 +241,11 @@ p.text-shead.up{
   font-weight: bold;
 }
 
+#back{
+  position: absolute;
+  margin-top: 712px;
+  margin-left: 1310px;
+}
 
 .link-icon{
   height: 30px;
