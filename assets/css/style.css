@@ -2,22 +2,22 @@
   font-family: sans-serif;
 }
 .bg{
-  background-image: url('../Images/bg.jpg');
+  background-image: url('../img/bg.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100%;
   }
 
 .bg.tc{
-  background-image: url('../Images/tc bg.jpg');
+  background-image: url('../img/tc bg.jpg');
 }
 
 .bg.fp{
-  background-image: url('../Images/forgot.webp');
+  background-image: url('../img/forgot.webp');
 }
 
 .bg.abt{
-  background-image: url('../Images/bg-abt.jpg');
+  background-image: url('../img/bg-abt.jpg');
 }
 
 .top{
@@ -385,7 +385,13 @@ p.text-shead.up{
 
 #back{
   position: absolute;
-  margin-top: 712px;
+  margin-top: 120px;
+  margin-left: 1310px;
+}
+
+#tac{
+  position: absolute;
+  margin-top: 710px;
   margin-left: 1310px;
 }
 
