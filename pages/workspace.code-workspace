@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../calc"
+		},
+		{
+			"path": "../../To-do"
+		}
+	],
+	"settings": {}
+}

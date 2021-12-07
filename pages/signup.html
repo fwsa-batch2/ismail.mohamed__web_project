@@ -11,14 +11,14 @@
         <span class="signin">
           <p class="text-head">Sign up</p>
           <p class="text-shead up">Already have an account? <a href="signin.html">Sign in</a></p>
-          <form class="" action="../index.html" method="post">
-            <input type="text" name="" value="" placeholder="Username" class="textbox" required>
+          <form onsubmit="getData()" action="../index.html" method="post">
+            <input type="text" name="" value="" placeholder="Username" class="textbox" id="name" required>
             <br>
-            <input type="text" name="" value="" placeholder="Mail ID" class="textbox" required>
+            <input type="email" name="" value="" placeholder="Mail ID" class="textbox" id="id" required>
             <br>
-            <input type="password" name="" value="" placeholder="Password" class="textbox" required>
+            <input type="password" name="" value="" placeholder="Password" class="textbox" id="pass" minlength="8" required>
             <br>
-            <input type="password" name="" value="" placeholder="Confirm Password" class="textbox" required>
+            <input type="password" name="" value="" placeholder="Confirm Password" class="textbox" id="cpass" minlength="8" required>
             <br>
             <input type="checkbox" name="" value="" style="margin-left: 20px; margin-top: 30px;" required>
             <label style="font-size: 12px;">I agree to the Smyle
@@ -26,7 +26,7 @@
             </label>
 
             <br>
-            <input type="submit" name="" value="Create account" class="button-up">
+            <input type="submit" onclick="checkPassword()" name="" value="Create account" class="button-up">
 
           </form>
 
@@ -35,6 +35,41 @@
 
 
       </div>
+      <script type="text/javascript">
+
+        let list=[];
+        function getData(){
+          let username=document.getElementById("name").value;
+          let mail=document.getElementById("id").value;
+          let pass=document.getElementById("pass").value;
+          let cpass=document.getElementById("cpass").value;
+
+          list.push(username);
+          list.push(mail);
+          list.push(pass);
+          list.push(cpass);
+
+          const string = JSON.stringify(list);
+
+          localStorage.setItem("student",string);
+
+          
+
+        alert( "Welcome to Smyle Designs " +username)
+        }
+        function checkPassword(){
+          let pass=document.getElementById("pass").value;
+          let cpass=document.getElementById("cpass").value;
+          let list=string;
+          if( pass != cpass){
+            alert("Password did not match");
+            window.location.href="#";
+ 
+          }
+        }
+
+
+      </script>
    </body>
  </center>
 </html>

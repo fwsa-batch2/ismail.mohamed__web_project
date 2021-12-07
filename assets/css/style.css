@@ -88,6 +88,25 @@
     background-color: #f0f0f0;
 }
 
+#filter{
+  position: absolute;
+  border-radius: 16px;
+  background-color: #e7e7e7;
+  border-style: none;
+  height: 45px;
+  width: 160px;
+  font-size: 18px;
+  padding: 10px;
+  margin-left: 380px;
+  margin-top: 30px;
+  font-weight: bold;
+}
+
+#filter:hover{
+    background-color: #f0f0f0;
+}
+
+
 #search{
   position: absolute;
   border-radius: 20px;
