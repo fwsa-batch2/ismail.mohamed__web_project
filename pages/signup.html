@@ -26,8 +26,8 @@
             </label>
 
             <br>
-            <input type="submit" onclick="checkPassword()" name="" value="Create account" class="button-up">
-
+            <button class="button-up" onclick="checkPassword()">Create account</button>
+            
           </form>
 
 
@@ -39,6 +39,7 @@
 
         let list=[];
         function getData(){
+          event.preventDefault();
           let username=document.getElementById("name").value;
           let mail=document.getElementById("id").value;
           let pass=document.getElementById("pass").value;
@@ -49,30 +50,42 @@
           "mailid":mail,
           "password":pass,
           "confirmPassword":cpass,
-
         }
 
-          list.push(si).value;
+          list.push(si);
 
           const string = JSON.stringify(list);
 
           localStorage.setItem("signup",string);
 
-          
+          checkPassword();
 
-        alert( "Hi " +username+ ", Welcome to Smyle Designs ")
         }
+        
         function checkPassword(){
           let pass=document.getElementById("pass").value;
           let cpass=document.getElementById("cpass").value;
-          let list=string;
           if( pass != cpass){
             alert("Password did not match");
+          } else{
+            alert("welcome")
             window.location.href="../index.html";
- 
+
           }
+
         }
 
+
+        function getItem(){
+
+          let getLocal=localStorage.getItem("signup");
+          let parse=JSON.parse(getLocal);
+          if(parse){
+            list=parse;
+          }
+
+        }
+        getItem();
 
       </script>
    </body>
