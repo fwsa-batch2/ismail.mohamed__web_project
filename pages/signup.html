@@ -11,7 +11,7 @@
         <span class="signin">
           <p class="text-head">Sign up</p>
           <p class="text-shead up">Already have an account? <a href="signin.html">Sign in</a></p>
-          <form onsubmit="getData()" action="../index.html" method="post">
+          <form onsubmit="getData()" method="post">
             <input type="text" name="" value="" placeholder="Username" class="textbox" id="name" required>
             <br>
             <input type="email" name="" value="" placeholder="Mail ID" class="textbox" id="id" required>
@@ -44,18 +44,23 @@
           let pass=document.getElementById("pass").value;
           let cpass=document.getElementById("cpass").value;
 
-          list.push(username);
-          list.push(mail);
-          list.push(pass);
-          list.push(cpass);
+        let si = {
+          "name":username,
+          "mailid":mail,
+          "password":pass,
+          "confirmPassword":cpass,
+
+        }
+
+          list.push(si).value;
 
           const string = JSON.stringify(list);
 
-          localStorage.setItem("student",string);
+          localStorage.setItem("signup",string);
 
           
 
-        alert( "Welcome to Smyle Designs " +username)
+        alert( "Hi " +username+ ", Welcome to Smyle Designs ")
         }
         function checkPassword(){
           let pass=document.getElementById("pass").value;
