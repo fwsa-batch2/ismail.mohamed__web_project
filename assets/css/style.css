@@ -97,7 +97,7 @@
   width: 160px;
   font-size: 18px;
   padding: 10px;
-  margin-left: 380px;
+  margin-left: 200px;
   margin-top: 30px;
   font-weight: bold;
 }
@@ -418,4 +418,11 @@ p.text-shead.up{
   height: 30px;
   margin-top: 45px;
   margin-left: 75px;
+}
+
+.invalid{
+  font-size: 15px;
+  margin-left: 15px;
+  margin-top: 240px;
+  color: rgb(248, 31, 85);
 }

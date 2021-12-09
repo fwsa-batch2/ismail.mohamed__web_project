@@ -11,25 +11,28 @@
         <span class="signin">
           <p class="text-head">Sign up</p>
           <p class="text-shead up">Already have an account? <a href="signin.html">Sign in</a></p>
-          <form onsubmit="getData()" method="post">
-            <input type="text" name="" value="" placeholder="Username" class="textbox" id="name" required>
+          <form onsubmit="getData()">
+            <input type="text"  placeholder="Username" class="textbox" id="name" required  >
             <br>
-            <input type="email" name="" value="" placeholder="Mail ID" class="textbox" id="id" required>
+            <input type="email" placeholder="Mail ID" class="textbox" id="id" required>
             <br>
-            <input type="password" name="" value="" placeholder="Password" class="textbox" id="pass" minlength="8" required>
+            <input type="password" placeholder="Password" class="textbox" id="pass" minlength="8" maxlength="20" required>
             <br>
-            <input type="password" name="" value="" placeholder="Confirm Password" class="textbox" id="cpass" minlength="8" required>
+            <input type="password" placeholder="Confirm Password" class="textbox" id="cpass" minlength="8" maxlength="20" required>
             <br>
-            <input type="checkbox" name="" value="" style="margin-left: 20px; margin-top: 30px;" required>
+            <label id="invalid" class="invalid"></label>
+            <br>
+            <input type="checkbox" style="margin-left: 20px; margin-top: 30px;" required>
             <label style="font-size: 12px;">I agree to the Smyle
               <a href="t&c.html" >Terms of Use</a>.
             </label>
 
             <br>
-            <button class="button-up" onclick="checkPassword()">Create account</button>
+            <button type="submit" class="button-up" onsubmit="checkPassword()">Create account</button>
             
           </form>
 
+          
 
         </span>
 
@@ -45,19 +48,19 @@
           let pass=document.getElementById("pass").value;
           let cpass=document.getElementById("cpass").value;
 
-        let si = {
+        let obj = {
           "name":username,
           "mailid":mail,
           "password":pass,
           "confirmPassword":cpass,
         }
 
-          list.push(si);
+          list.push(obj);
 
           const string = JSON.stringify(list);
 
           localStorage.setItem("signup",string);
-
+        
           checkPassword();
 
         }
@@ -66,9 +69,11 @@
           let pass=document.getElementById("pass").value;
           let cpass=document.getElementById("cpass").value;
           if( pass != cpass){
-            alert("Password did not match");
-          } else{
-            alert("welcome")
+            document.getElementById("invalid").innerHTML="Those passwords didn't match, Try again."
+          } 
+          else{
+          let username=document.getElementById("name").value;
+            alert( "Hi " +username+ ", Welcome to Smyle Designs ")
             window.location.href="../index.html";
 
           }
@@ -86,6 +91,12 @@
 
         }
         getItem();
+
+        function myFunction() {
+          document.getElementById("demo").innerHTML;
+        }
+
+        myFunction();
 
       </script>
    </body>
