@@ -15,7 +15,7 @@
                     console.log(store)
                 }
                 else{
-                    alert("error");
+                    alert("Invalid username or password");
                 }
             
             }
