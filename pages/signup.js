@@ -3,17 +3,17 @@
         let list=[];
         function getData(){
           event.preventDefault();
-          let username=document.getElementById("name").value;
-          let mail=document.getElementById("id").value;
-          let pass=document.getElementById("pass").value;
-          let cpass=document.getElementById("cpass").value;
+          const username=document.getElementById("name").value;
+          const mail=document.getElementById("id").value;
+          const pass=document.getElementById("pass").value;
+          const cpass=document.getElementById("cpass").value;
 
-        let obj = {
+        const obj = {
           "username":username,
           "mailid":mail,
           "password":pass,
-          "confirmPassword":cpass,
-        }
+          "confirmPassword":cpass
+        };
 
           list.push(obj);
 
@@ -41,19 +41,19 @@
         }
 
 
-        function getItem(){
+        // function getItem(){
 
-          let getLocal=localStorage.getItem("signup");
-          let parse=JSON.parse(getLocal);
-          if(parse){
-            list=parse;
-          }
+        //   let getLocal=localStorage.getItem("signup");
+        //   let parse=JSON.parse(getLocal);
+        //   if(parse){
+        //     list=parse;
+        //   }
 
-        }
-        getItem();
+        // }
+        // getItem();
 
         function myFunction() {
-          document.getElementById("demo").innerHTML;
+          document.getElementById("invalid").innerHTML;
         }
 
         myFunction();
