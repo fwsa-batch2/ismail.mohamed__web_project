@@ -13,7 +13,7 @@
           "mailid":mail,
           "password":pass,
           "confirmPassword":cpass
-        };
+        }
 
           list.push(obj);
 
@@ -32,8 +32,6 @@
             document.getElementById("invalid").innerHTML="Those passwords didn't match, Try again."
           } 
           else{
-          // let username=document.getElementById("name").value;
-          //   alert( "Hi " +username+ ", Welcome to Smyle Designs ")
             window.location.href="signin.html";
 
           }
