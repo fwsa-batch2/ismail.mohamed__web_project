@@ -32,25 +32,13 @@
             document.getElementById("invalid").innerHTML="Those passwords didn't match, Try again."
           } 
           else{
-          let username=document.getElementById("name").value;
-            alert( "Hi " +username+ ", Welcome to Smyle Designs ")
-            window.location.href="../index.html";
+          // let username=document.getElementById("name").value;
+          //   alert( "Hi " +username+ ", Welcome to Smyle Designs ")
+            window.location.href="signin.html";
 
           }
 
         }
-
-
-        // function getItem(){
-
-        //   let getLocal=localStorage.getItem("signup");
-        //   let parse=JSON.parse(getLocal);
-        //   if(parse){
-        //     list=parse;
-        //   }
-
-        // }
-        // getItem();
 
         function myFunction() {
           document.getElementById("invalid").innerHTML;
