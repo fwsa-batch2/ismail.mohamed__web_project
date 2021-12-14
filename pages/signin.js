@@ -1,4 +1,3 @@
-
         let list=[];
         function getData(){
           event.preventDefault();
