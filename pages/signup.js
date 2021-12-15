@@ -22,9 +22,7 @@
 
           }
           if(already){
-            alert("mail already");
-            return;
-
+            alert("invalid")
           }
 
 
