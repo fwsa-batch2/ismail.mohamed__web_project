@@ -11,13 +11,12 @@
                 if(store[i].username == username && store[i].password==pass){
                     alert( "Hi " +username+ ", Welcome to Smyle Designs ");
                     window.location.href="../index.html";
-                    console.log(store)
                     break;
                 }
                 
                 else{
                     alert("Invalid username or password");
-                    break;
+                    break;  
                 }
             }
         }

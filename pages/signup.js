@@ -22,12 +22,10 @@
 
           }
           if(already){
-            alert("invalid")
+            alert("Mail ID already exist")
+            
           }
 
-
-
-          // checkPassword();
 
         const obj = {
           "username":username,
@@ -52,16 +50,6 @@
 
         }
         
-        // function checkPassword(){
-        //   let pass=document.getElementById("pass").value;
-        //   let cpass=document.getElementById("cpass").value;
-        //   if( pass != cpass){
-        //     document.getElementById("invalid").innerText="Those passwords didn't match, Try again."
-        //     return;
-        //   } 
-        // }
-
-
 
         function myFunction() {
           document.getElementById("invalid").innerText;
