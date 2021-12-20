@@ -2,9 +2,12 @@
   <head>
     <title>Smyle Sign up</title>
     <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
   </head>
 
     <body class="bg">
+      
+
         <img src="../assets/img/white.png" alt="Logo" class="icon" >
       <div class="box">
         <img src="../assets/img/signup.png" alt="" id="side-up">
@@ -14,13 +17,16 @@
           <form onsubmit="getData()">
             <input type="text"  placeholder="Username" class="textbox" id="name" pattern="[a-zA-z0-9]{4,25}" title="The username should be at least 4 characters in length and not in spaces." required  >
             <br>
-            <input type="email" placeholder="Mail ID" class="textbox" id="id" required>
+            <input type="email" placeholder="Mail ID" class="textbox" id="id" pattern="[A-Za-z0-9]+@[a-z]+\.[a-z]{2,8}" required>
+            <br>
+            <label id="invalidmail" class="invalid"></label>
             <br>
             <input type="password" placeholder="Password" class="textbox" id="pass" minlength="8" maxlength="20" required>
+            <span id="icon"><i class="fa fa-eye" onclick="showpassword()" ></i></span>
             <br>
             <input type="password" placeholder="Confirm Password" class="textbox" id="cpass" minlength="8" maxlength="20" required>
             <br>
-            <label id="invalid" class="invalid"></label>
+            <label id="invalidpass" class="invalid"></label>
             <br>
             <input type="checkbox" style="margin-left: 20px; margin-top: 30px;" required>
             <label style="font-size: 12px;">I agree to the Smyle
@@ -36,7 +42,7 @@
 
       </div>
 
-<script src="./signup.js"></script>
+      <script src="./signup.js"></script>
    </body>
 
 </html>

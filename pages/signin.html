@@ -2,6 +2,8 @@
   <head>
     <title>Smyle Sign in</title>
     <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+
   </head>
 
     <body class="bg">
@@ -15,6 +17,7 @@
             <input type="text"  placeholder="Username" class="textbox" id="name" pattern="[a-zA-z0-9]{4,25}" title="The username should be at least 4 characters in length and not in spaces." required>
             <br>
             <input type="password"  placeholder="Password" class="textbox" id="pass" minlength="8" maxlength="20" required>
+            <span id="icon"><i class="fa fa-eye" onclick="showpassword()" ></i></span>
             <br>
             <a href="forgot.html">
               <label style="font-size: 15px;">Forgot password?</label>
