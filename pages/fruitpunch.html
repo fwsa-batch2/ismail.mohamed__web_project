@@ -9,7 +9,7 @@
       <img src="../assets/img/pro3.png" alt="profile" class="profile" />
       <span>
         <p id="head">Fruit Punch</p><br>
-        <p id="topic">Smyle Designs • <a href=""> Follow</a></p>
+        <p id="topic">Smyle Designs • <a href="" onclick="follow()" id="follow" > Follow</a></p>
 
        
 
@@ -37,6 +37,20 @@
       
 
     </div>
-    
+    <script>
+      function follow(){
+        event.preventDefault();
+        if{
+        document.getElementById("follow").innerText =
+      "Followed";
+    }
+      else{
+      document.getElementById("follow").innerText =
+      "Follow";
+      }
+        
+      return;
+      }
+    </script>
   </body>
 </html>
