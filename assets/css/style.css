@@ -304,6 +304,11 @@ a{
   position: absolute;
 }
 
+.signup{
+  margin-top: 4px;
+  position: absolute;
+}
+
 p.text-head{
   margin-left: 0px;
   font-size: 30px;
@@ -335,10 +340,10 @@ p.text-shead.up{
 }
 
 .textbox{
-  border-radius: 20px;
+  border-radius: 25px;
   margin-top: 35px;
-  height: 50px;
-  width: 400px;
+  height: 14px;
+  width: 360px;
   border-style: none;
   background-color: #f0f0f0;
   font-size: 18px;
