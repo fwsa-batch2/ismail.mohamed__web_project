@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>HM Jewels</title>
+    <link rel="stylesheet" href="../assets/css/preview.css" />
+  </head>
+  <body>
+    <div class="heading">
+      <img src="../assets/img/pro3.png" alt="profile" class="profile" onclick="designer()" />
+      <span>
+        <p id="head">HM Jewels</p><br>
+        <p id="topic">
+          Ismail_smile • <a href="" onclick="follow()" id="follow"></a>
+        </p>
+       
+
+      </span>
+    </div>
+    <div class="box">
+      <img src="../assets/img/hmlogo.jpg" alt="logo mockup" id="previewimgs" />
+      <img
+        src="../assets/img/hmlogo1.jpg"
+        alt="logo definition"
+        id="previewimgs"
+      />
+      <img
+        src="../assets/img/hmlogo3.jpg"
+        alt="logo variation"
+        id="previewimgs"
+      />
+      <img
+        src="../assets/img/hmlogo2.jpg"
+        alt="logo overlay"
+        id="previewimgs"
+      />
+      <img src="../assets/img/like.png" alt="like-button" id="like"> 
+      
+      
+
+    </div>
+    <script>
+      function designer() {
+        window.location.href = "https://www.google.com/";
+      }
+
+      let click =document.getElementById("follow").innerText = "Follow";
+      function follow() {
+        event.preventDefault();
+          document.getElementById("follow").innerText = "Followed";
+     }
+    </script>
+  </body>
+</html>

@@ -77,7 +77,5 @@ function showpassword(){
   }
   else{
     pswd.type="Password";
-    
-
   }
 }

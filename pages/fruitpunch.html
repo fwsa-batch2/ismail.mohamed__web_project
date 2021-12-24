@@ -6,13 +6,18 @@
   </head>
   <body>
     <div class="heading">
-      <img src="../assets/img/pro3.png" alt="profile" class="profile" />
+      <img
+        src="../assets/img/pro3.png"
+        alt="profile"
+        class="profile"
+        onclick="designer()"
+      />
       <span>
-        <p id="head">Fruit Punch</p><br>
-        <p id="topic">Smyle Designs • <a href="" onclick="follow()" id="follow" > Follow</a></p>
-
-       
-
+        <p id="head">Fruit Punch</p>
+        <br />
+        <p id="topic">
+          Ismail_smile • <a href="" onclick="follow()" id="follow"></a>
+        </p>
       </span>
     </div>
     <div class="box">
@@ -32,25 +37,18 @@
         alt="logo overlay"
         id="previewimgs"
       />
-      <img src="../assets/img/like.png" alt="like-button" id="like"> 
-      
-      
-
+      <img src="../assets/img/like.png" alt="like-button" id="like" />
     </div>
     <script>
-      function follow(){
+      function designer() {
+        window.location.href = "designer.html";
+      }
+
+      let click =document.getElementById("follow").innerText = "Follow";
+      function follow() {
         event.preventDefault();
-        if(){
-        document.getElementById("follow").innerText =
-      "Followed";
-    }
-      else{
-      document.getElementById("follow").innerText =
-      "Follow";
-      }
-        
-      return;
-      }
+          document.getElementById("follow").innerText = "Followed";
+     }
     </script>
   </body>
 </html>

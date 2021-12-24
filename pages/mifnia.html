@@ -6,11 +6,12 @@
   </head>
   <body>
     <div class="heading">
-      <img src="../assets/img/pro3.png" alt="profile" class="profile" />
+      <img src="../assets/img/pro3.png" alt="profile" class="profile" onclick="designer()" />
       <span>
         <p id="head">Hotel Mifnia</p><br>
-        <p id="topic">Smyle Designs • <a href=""> Follow</a></p>
-
+        <p id="topic">
+          Ismail_smile • <a href="" onclick="follow()" id="follow"></a>
+        </p>
        
 
       </span>
@@ -37,6 +38,16 @@
       
 
     </div>
-    
+    <script>
+      function designer() {
+        window.location.href = "https://www.google.com/";
+      }
+
+      let click =document.getElementById("follow").innerText = "Follow";
+      function follow() {
+        event.preventDefault();
+          document.getElementById("follow").innerText = "Followed";
+     }
+    </script>
   </body>
 </html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Furni Chair</title>
+    <link rel="stylesheet" href="../assets/css/preview.css" />
+  </head>
+  <body>
+    <div class="heading">
+      <img src="../assets/img/pro3.png" alt="profile" class="profile" onclick="designer()" />
+      <span>
+        <p id="head">Furni Chair</p><br>
+        <p id="topic">
+          Ismail_smile • <a href="" onclick="follow()" id="follow"></a>
+        </p>
+
+       
+
+      </span>
+    </div>
+    <div class="box">
+      <img
+        src="../assets/img/furnilogo4.jpg"
+        alt="logo definition"
+        id="previewimgs"
+      />
+      <img
+        src="../assets/img/furnilogo2.jpg"
+        alt="logo variation"
+        id="previewimgs"
+      />
+      <img
+      src="../assets/img/furnilogo1.jpg"
+      alt="color variation"
+      id="previewimgs"
+    />
+      <img
+        src="../assets/img/furnilogo3.jpg"
+        alt="logo overlay"
+        id="previewimgs"
+      />
+      <img src="../assets/img/like.png" alt="like-button" id="like"> 
+      
+      
+
+    </div>
+    <script>
+      function designer() {
+        window.location.href = "https://www.google.com/";
+      }
+
+      let click =document.getElementById("follow").innerText = "Follow";
+      function follow() {
+        event.preventDefault();
+          document.getElementById("follow").innerText = "Followed";
+     }
+    </script>
+  </body>
+</html>

@@ -14,7 +14,8 @@ function getData() {
   event.preventDefault();
   const username = document.getElementById("name").value;
   const pass = document.getElementById("pass").value;
-
+  let isuser=false;
+  
   const store = JSON.parse(localStorage.getItem("signup"));
   for (i = 0; i < store.length; i++) {
 
@@ -30,19 +31,28 @@ function getData() {
 
 
     if (store[i].username == username && store[i].password == pass) {
-      alert("Hi " + username + ", Welcome to Smyle Designs ");
-      window.location.href = "../index.html";
-      return;
+      // alert("Hi " + username + ", Welcome to Smyle Designs ");
+      // window.location.href = "../index.html";
+      isuser=true;
+      break;
     } 
     
-    else {
-      alert("Invalid username or password");
+    // else {
+    //   alert("Invalid username or password");
     
-    }
+    // }
     
   }
 
-
+  if(isuser){
+    alert("Hi " + username + ", Welcome to Smyle Designs ");
+      window.location.href = "../index.html";
+  }
+  
+  else{
+    alert("Invalid username or password");
+    return null;
+  }
 
 }
 
