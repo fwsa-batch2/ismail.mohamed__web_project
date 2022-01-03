@@ -2,6 +2,9 @@
 
 ### Netlify Link:
 * https://smyleapp-ui-ismailmohamed.netlify.app/
+
+### Domain Link:
+* http://smyle.fwsa.in/
 	
 ### Features:
 * Home Page
