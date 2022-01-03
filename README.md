@@ -6,9 +6,9 @@
 ### Features:
 * Home Page
 * Sign-in
-* Forgot Password
-* OTP
 * Sign-up
+* search (key: logo ideas)
+* filter(color)
 * Terms and Conditions
 * Preview page (In Progress)
 * About Page

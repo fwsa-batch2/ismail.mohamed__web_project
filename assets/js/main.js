@@ -48,6 +48,8 @@ console.log(value)
     document.getElementById("white3").style.display="none";
     document.getElementById("black1").style.display="none";
     document.getElementById("black2").style.display="none";
+
+
   }
 
   else if(value == "yellow"){

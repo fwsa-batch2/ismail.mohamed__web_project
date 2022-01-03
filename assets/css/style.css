@@ -28,13 +28,12 @@
 .main{
   display: grid;
   grid-template-columns: repeat(auto-fill,minmax(350px,0px));
-  grid-template-rows: repeat(auto-fill,minmax(270px,220px));
+  grid-template-rows: repeat(auto-fill,minmax(270px,0px));
   /* background-color:yellowgreen ; */
   width: 96%;
   height: 1150px;
   margin-left: 3.5%;
   margin-top: 2%;
-
 
 }
 
