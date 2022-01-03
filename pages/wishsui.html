@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Wishs App UI</title>
+  <link rel="stylesheet" href="../assets/css/preview.css" />
+</head>
+
+<body>
+  <div class="heading">
+    <img src="../assets/img/pro3.png" alt="profile" class="profile" onclick="designer()" />
+    <span>
+      <p id="head">Wishs App UI</p>
+      <br />
+      <p id="topic">
+        Ismail_smile • <a href="" onclick="follow()" id="follow"></a>
+      </p>
+    </span>
+  </div>
+  <div class="box" >
+    <img src="../assets/img/wishui1.png" alt="logo mockup" id="previewimgs" />
+    <img src="../assets/img/wishui2.png" alt="logo definition" id="previewimgs" />
+    <img src="../assets/img/wishui3.png" alt="logo variation" id="previewimgs" />
+
+    <img src="../assets/img/like.png" alt="like-button" id="like" />
+  </div>
+  <script>
+    function designer() {
+      window.location.href = "designer.html";
+    }
+
+    let click = (document.getElementById("follow").innerText = "Follow");
+    function follow() {
+      event.preventDefault();
+      document.getElementById("follow").innerText = "Followed";
+    }
+  </script>
+</body>
+
+</html>

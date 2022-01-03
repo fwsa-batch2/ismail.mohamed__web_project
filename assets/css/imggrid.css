@@ -1,10 +1,9 @@
 *{
-    font-family: sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
   }
 
 .img:hover{
     opacity: 1;
-  
   }
   
   .img-1{
@@ -12,13 +11,14 @@
     width: 300px;
     height: 220px;
     border-radius: 10px;
+    
   }
   
   .img-over{
     position: absolute;
     width: 300px;
     height: 220px;
-    background-color: rgba(0,0,0,0.6);
+    background-color: rgba(0,0,0,0.4);
     color: white;
     opacity: 0;
     border-radius: 10px;
@@ -42,7 +42,7 @@
     margin-top: 6px;
   }
   
-  #gap1{
+  /* #gap1{
     margin-left: 30px;
   }
   
@@ -60,13 +60,7 @@
   
   #gap5{
     margin-left: 1430px;
-  }
+  } */
   
-  .head{
-    margin-left: 30px;
-    margin-top: 80px;
-    margin-bottom: 30px;
-    border-radius: 25px;
-    font-size: 35px;
-    color: #202020;
-  }
+
+  

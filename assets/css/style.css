@@ -1,12 +1,17 @@
 *{
-  font-family:sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .bg{
-  background-image: url('../img/bg.jpg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-image: url('../img/bgwhite.jpg');
+  background-repeat:repeat;
+  /* background-attachment: fixed; */
   background-size: 100%;
   }
+
+.bg.reg{
+  background-image: url('../img/bg.jpg');
+
+}
 
 .bg.tc{
   background-image: url('../img/tc bg.jpg');
@@ -20,11 +25,22 @@
   background-image: url('../img/bg-abt.jpg');
 }
 
+.main{
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(350px,0px));
+  grid-template-rows: repeat(auto-fill,minmax(270px,220px));
+  /* background-color:yellowgreen ; */
+  width: 96%;
+  height: 1150px;
+  margin-left: 3.5%;
+  margin-top: 2%;
 
+
+}
 
 #team{
   height: 410px;
-  margin-top: 130px;
+  /* margin-top: 130px; */
   margin-left: 420px;
 }
 
@@ -320,14 +336,13 @@ p.text-shead.up{
 }
 
 .sidepro{
-  background-color: rgb(240, 240, 240, .9);
+  background-color: rgb(247, 247, 247);
   width: 400px;
   height: 700px;
   margin-top:-4px;
-  position: absolute;
+  text-align: center;
   margin-left: -8px;
-  border-radius: 10px;
-  /* position: fixed; */
+  /* border-radius: 10px; */
   
 }
 
@@ -343,4 +358,90 @@ p.text-shead.up{
   margin-top: 80px;
   margin-left: -8px;
   /* position: fixed; */
+}
+
+.follow{
+  height: 50px;
+  width: 170px;
+  border-radius: 30px;
+  border-style: none;
+  background-color:#129EFF;
+  font-size: 18px;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+
+
+}
+
+.follow:hover{
+  background-color: #0B90EC;
+  /* color: white; */
+}
+
+.adbanner{
+  background-color: rgb(255, 255, 255, .7);
+  width: 90%;
+  height: 400px;
+  margin-left: 65px;
+  margin-top: 130px;;
+  border-radius: 30px;
+  padding: 30px;
+}
+
+.filter{
+  margin-left:1%;
+  border-radius: 12px;
+  width: 32px;
+  height: 30px;
+  border-style: none;
+  /* margin-top: 7px; */
+}
+
+.colortext{
+  font-weight: bold;
+  font-size: 25px;
+  opacity: .6;
+  margin-right: 10px;
+}
+
+.filter.red{
+  background-color: rgb(255, 51, 51);
+}
+
+.filter.yellow{
+  background-color: rgb(238, 202, 0);
+}
+
+.filter.blue{
+  background-color:rgb(0, 174, 255);
+}
+
+.filter.green{
+  background-color:rgb(16, 192, 0);
+}
+
+.filter.violet{
+  background-color:rgb(146, 0, 204);
+}
+
+.filter.orange{
+  background-color:rgb(243, 117, 0);
+}
+
+.filter.black{
+  background-color:rgb(0, 0, 0);
+}
+
+.filter.white{
+  background-color:rgb(255, 255, 255);
+}
+
+.colorbox{
+  background-color: rgba(93, 93, 93, 0.1);
+  margin-left: 3.5%;
+  width: 320px;
+  height: 56px;
+  padding: 15px;
+  border-radius: 20px;
 }
