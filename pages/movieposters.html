@@ -36,20 +36,20 @@
     <div class="colorbox">
       <span class="colortext">Color</span><br>
       <span>
-      <button class="filter red" id="red" onclick="filter(value)"></button>
-      <button class="filter blue" id="blue"></button>
-      <button class="filter yellow" id="yellow"></button>
-      <button class="filter green" id="green"></button>
-      <button class="filter violet" id="violet"></button>
-      <button class="filter orange" id="orange"></button>
-      <button class="filter white" id="white"></button>
-      <button class="filter black" id="black"></button>
-      </span>
+        <button class="filter red" onclick="filter('red')"></button>
+        <button class="filter blue" onclick="filter('blue')"></button>
+        <button class="filter yellow"  onclick="filter('yellow')"></button>
+        <button class="filter green"  onclick="filter('green')"></button>
+        <button class="filter violet"  onclick="filter('violet')"></button>
+        <button class="filter orange"  onclick="filter('orange')"></button>
+        <button class="filter white"  onclick="filter('white')"></button>
+        <button class="filter black"  onclick="filter('black')"></button>
+        </span>
     </div>
     
     <div class="main">
 
-      <div id="gap2">
+      <div id="green">
         <a href="../pages/teddy.html">
           <img src="../assets/img/teddy.jpg" alt="teddy poster" class="img-1" />
           <div class="img-over">
@@ -57,9 +57,13 @@
             <p class="img-des">MINIMAL MOVIE POSTER</p>
           </div>
         </a>
+        <div>
+          <img src="../assets/img/pro3.png" alt="profile pic" id="prof">
+          <label>Ismail_smile</label>
+        </div>
       </div>
 
-    <div id="gap2">
+    <div id="yellow">
       <a href="../pages/rats.html">
         <img src="../assets/img/rats.webp" alt="ratsasan poster" class="img-1" />
         <div class="img-over">
@@ -67,9 +71,13 @@
           <p class="img-des">MINIMAL MOVIE POSTER</p>
         </div>
       </a>
+      <div>
+        <img src="../assets/img/pro3.png" alt="profile pic" id="prof">
+        <label>Ismail_smile</label>
+      </div>
     </div>
 
-    <div id="gap2">
+    <div id="black">
     <a href="../pages/7p.html">
       <img src="../assets/img/7p.webp" alt="7pounds logo" class="img-1" />
       <div class="img-over">
@@ -77,6 +85,10 @@
         <p class="img-des">MINIMAL MOVIE POSTER</p>
       </div>
     </a>
+    <div>
+      <img src="../assets/img/pro3.png" alt="profile pic" id="prof">
+      <label>Ismail_smile</label>
+    </div>
     </div>
 
 
@@ -85,7 +97,9 @@
 
     <h4>You've reached the end of the results for this search.</h4>
 
+    <script src="../assets/js/moviefilter.js"></script>
     <script src="../assets/js/main.js"></script>
+
 
 </body>
 
