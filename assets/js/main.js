@@ -24,8 +24,7 @@ console.log(value)
     document.getElementById("orange3").style.display = "none";
     document.getElementById("blue1").style.display="none";
     document.getElementById("blue2").style.display="none";
-    // document.getElementById("yellow").style.display="none";
-    // document.getElementById("green").style.display="none";
+
     document.getElementById("white1").style.display="none";
     document.getElementById("white2").style.display="none";
     document.getElementById("white3").style.display="none";
@@ -34,15 +33,12 @@ console.log(value)
   }
 
   else if(value == "blue"){
-    // alert("hello")
+
     document.getElementById("red").style.display = "none";
     document.getElementById("orange1").style.display = "none";
     document.getElementById("orange2").style.display = "none";
     document.getElementById("orange3").style.display = "none";
-    // document.getElementById("blue1").style.display="none";
-    // document.getElementById("blue2").style.display="none";
-    // document.getElementById("yellow").style.display="none";
-    // document.getElementById("green").style.display="none";
+
     document.getElementById("white1").style.display="none";
     document.getElementById("white2").style.display="none";
     document.getElementById("white3").style.display="none";
@@ -52,57 +48,15 @@ console.log(value)
 
   }
 
-  else if(value == "yellow"){
-    // // alert("hello")
-    // document.getElementById("red").style.display = "none";
-    // document.getElementById("blue1").style.display="none";
-    // document.getElementById("blue2").style.display="none";
-    // // document.getElementById("yellow").style.display="none";
-    // // document.getElementById("green").style.display="none";
-    // document.getElementById("white1").style.display="none";
-    // document.getElementById("white2").style.display="none";
-    // document.getElementById("white3").style.display="none";
-    // document.getElementById("black1").style.display="none";
-    // document.getElementById("black2").style.display="none";
-  }
 
-  else if(value == "green"){
-    // // alert("hello")
-    // document.getElementById("red").style.display = "none";
-    // document.getElementById("blue1").style.display="none";
-    // document.getElementById("blue2").style.display="none";
-    // // document.getElementById("yellow").style.display="none";
-    // // document.getElementById("green").style.display="none";
-    // document.getElementById("white1").style.display="none";
-    // document.getElementById("white2").style.display="none";
-    // document.getElementById("white3").style.display="none";
-    // document.getElementById("black1").style.display="none";
-    // document.getElementById("black2").style.display="none";
-  }
-
-
-  else if(value == "violet"){
-    // // alert("hello")
-    // document.getElementById("red").style.display = "none";
-    // document.getElementById("blue1").style.display="none";
-    // document.getElementById("blue2").style.display="none";
-    // // document.getElementById("yellow").style.display="none";
-    // // document.getElementById("green").style.display="none";
-    // document.getElementById("white1").style.display="none";
-    // document.getElementById("white2").style.display="none";
-    // document.getElementById("white3").style.display="none";
-    // document.getElementById("black1").style.display="none";
-    // document.getElementById("black2").style.display="none";
-  }
 
 
   else if(value == "orange"){
-    // alert("hello")
+
     document.getElementById("red").style.display = "none";
     document.getElementById("blue1").style.display="none";
     document.getElementById("blue2").style.display="none";
-    // document.getElementById("yellow").style.display="none";
-    // document.getElementById("green").style.display="none";
+
     document.getElementById("white1").style.display="none";
     document.getElementById("white2").style.display="none";
     document.getElementById("white3").style.display="none";
@@ -111,12 +65,10 @@ console.log(value)
   }
 
   else if(value == "white"){
-    // alert("hello")
+
     document.getElementById("red").style.display = "none";
     document.getElementById("blue1").style.display="none";
     document.getElementById("blue2").style.display="none";
-    // document.getElementById("yellow").style.display="none";
-    // document.getElementById("green").style.display="none";
     document.getElementById("orange1").style.display="none";
     document.getElementById("orange2").style.display="none";
     document.getElementById("orange3").style.display="none";
@@ -125,20 +77,15 @@ console.log(value)
   }
 
   else if(value == "black"){
-    // alert("hello")
-    // document.getElementById("red").style.display = "none";
     document.getElementById("blue1").style.display="none";
     document.getElementById("blue2").style.display="none";
-    // document.getElementById("yellow").style.display="none";
-    // document.getElementById("green").style.display="none";
+
     document.getElementById("orange1").style.display="none";
     document.getElementById("orange2").style.display="none";
     document.getElementById("orange3").style.display="none";
     document.getElementById("white1").style.display="none";
     document.getElementById("white2").style.display="none";
     document.getElementById("white3").style.display="none";
-    // document.getElementById("black1").style.display="none";
-    // document.getElementById("black2").style.display="none";
   }
 
 

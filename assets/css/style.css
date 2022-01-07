@@ -27,8 +27,8 @@
 
 .main{
   display: grid;
-  grid-template-columns: repeat(auto-fill,minmax(350px,0px));
-  grid-template-rows: repeat(auto-fill,minmax(270px,0px));
+  grid-template-columns: repeat(auto-fill,minmax(300px,auto));
+  grid-template-rows: repeat(auto-fill,minmax(310px,210px));
   /* background-color:yellowgreen ; */
   width: 96%;
   height: 1150px;
@@ -74,6 +74,11 @@
   margin-left: 980px;
   background-color: black;
   color: white;
+}
+
+#prof{
+  margin-top: 235px;
+  width: 30px;
 }
 
 #list{
