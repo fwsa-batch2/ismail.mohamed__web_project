@@ -17,7 +17,7 @@ function getData() {
   let isuser=false;
   
   const store = JSON.parse(localStorage.getItem("signup"));
-  for (i = 0; i < store.length; i++) {
+  for (let i = 0; i < store.length; i++) {
 
     if (store[i].username == username && store[i].password == pass) {
       isuser=true;

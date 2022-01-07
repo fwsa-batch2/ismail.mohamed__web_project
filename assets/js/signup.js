@@ -12,7 +12,7 @@ function onLoad() {
 onLoad();
 
 function getData() {
-  // console.group("getdata");
+
   event.preventDefault();
 
   let username = document.getElementById("name").value;
@@ -31,7 +31,7 @@ function getData() {
   if (pass != cpass) {
     document.getElementById("invalidpass").innerText =
       "Those passwords didn't match, Try again.";
-    return;
+
   } 
   
   else {
@@ -44,7 +44,7 @@ function getData() {
 
     list.push(obj);
 
-    // console.log(list);
+
 
     let local = JSON.stringify(list);
 
@@ -57,8 +57,8 @@ function getData() {
 function already(current) {
   let isExist = false;
 
-  for (i = 0; i < list.length; i++) {
-    // console.table(list[i]);
+  for (let i = 0; i < list.length; i++) {
+
     if (current == list[i].mailid) {
       isExist = true;
       break;
@@ -70,7 +70,7 @@ function already(current) {
 
 function showpassword(){
   let pswd=document.getElementById("pass");
-  // let show=document.getElementById("cpass");
+
 
   if(pswd.type === "password"){
     pswd.type="text";
