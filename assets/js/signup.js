@@ -11,7 +11,7 @@ function onLoad() {
 
 onLoad();
 
-function getData() {
+function getData(event) {
 
   event.preventDefault();
 
@@ -56,8 +56,8 @@ function getData() {
 
 function already(current) {
   let isExist = false;
-
-  for (let i = 0; i < list.length; i++) {
+  let len=list.length;
+  for (let i = 0; i < len; i++) {
 
     if (current == list[i].mailid) {
       isExist = true;

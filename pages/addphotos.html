@@ -5,17 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Smyle Designs add</title>
+    <link rel="stylesheet" href="../assets/css/add.css" />
+
 </head>
 <body>
     <div>
         <form onsubmit="submitHandler()">
-            <label>Image</label>
-            <input type="text" id="img">
-            <label>Title</label>
+            <!-- <label>Image</label><br> -->
+            <input type="file" id="img" value="Image">
+            <label>Title</label><br>
             <input type="text" id="title">
-            <label>Category</label>
+            <label>Category</label><br>
             <input type="text" id="type">
-            <label>Designer</label>
+            <label>Designer</label><br>
             <input type="text" id="designer">
             <button type="submit">Add</button>
         </form>
@@ -36,7 +38,6 @@
 
     onpage();
 
-
     function submitHandler(){
         const image=document.getElementById("img").value;
         const title=document.getElementById("title").value;
@@ -53,8 +54,9 @@
         mt.push(object);
         console.log(mt);
 
-        localStorage.setItem("details", JSON.stringify(mt))
+        localStorage.setItem("details", JSON.stringify(mt));
 
+        window.location.href="https://translate.google.com/"
     }
 
 

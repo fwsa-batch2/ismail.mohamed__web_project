@@ -14,7 +14,7 @@
         <span class="signin">
           <p class="text-head">Sign in</p>
           <p class="text-shead">New User? <a href="signup.html">Sign up</a></p>
-          <form onsubmit="getData()">
+          <form onsubmit="getData(event)">
             <input type="text"  placeholder="Username" class="textbox" id="name" pattern="[a-zA-z0-9]{4,25}" title="The username should be at least 4 characters in length and not in spaces." required>
             <br>
             <input type="password"  placeholder="Password" class="textbox" id="pass" minlength="8" maxlength="20" required>

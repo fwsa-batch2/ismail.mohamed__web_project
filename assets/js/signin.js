@@ -10,14 +10,14 @@ function onLoad() {
 
 onLoad();
 
-function getData() {
+function getData(event) {
   event.preventDefault();
   const username = document.getElementById("name").value;
   const pass = document.getElementById("pass").value;
   let isuser=false;
-  
+  let len=store.length;
   const store = JSON.parse(localStorage.getItem("signup"));
-  for (let i = 0; i < store.length; i++) {
+  for (let i = 0; i < len; i++) {
 
     if (store[i].username == username && store[i].password == pass) {
       isuser=true;
