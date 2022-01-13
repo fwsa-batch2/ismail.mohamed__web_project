@@ -10,14 +10,14 @@
 </head>
 <body>
     <div>
-        <form onsubmit="submitHandler()">
-
-            <input type="file" id="img" value="Image">
-            <label>Title</label><br>
-            <input type="text" id="title">
-            <label>Category</label><br>
+        <form onsubmit="submitHandler(event)">
+            <label>Title</label> 
+            <input type="text" id="title" pattern="^[a-zA-Z0-9_]+( [a-zA-Z0-9_]+)*$">
+            <label>Image</label> 
+            <input type="text" id="img">
+            <label>Category</label> 
             <input type="text" id="type">
-            <label>Designer</label><br>
+            <label>Designer</label> 
             <input type="text" id="designer">
             <button type="submit">Add</button>
         </form>
@@ -38,7 +38,8 @@
 
     onpage();
 
-    function submitHandler(){
+    function submitHandler(event){
+        event.preventDefault();
         const image=document.getElementById("img").value;
         const title=document.getElementById("title").value;
         const type=document.getElementById("type").value;
@@ -56,10 +57,11 @@
 
         localStorage.setItem("details", JSON.stringify(mt));
 
-        window.location.href="https://translate.google.com/"
+        window.location.href="./../index.html"
     }
 
 
     </script>
+
 </body>
 </html>

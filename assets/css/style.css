@@ -26,15 +26,16 @@
 }
 
 .main{
-  display: grid;
-  grid-template-columns: repeat(auto-fill,minmax(300px,auto));
-  grid-template-rows: repeat(auto-fill,minmax(310px,210px));
-  /* background-color:yellowgreen ; */
+  height: 100%;
   width: 96%;
-  height: 1150px;
   margin-left: 3.5%;
-  margin-top: 2%;
+}
 
+.newly{
+  width: calc(96%/5);
+  margin-top: 20px;
+  display: inline-block;
+  /* background-color: bisque; */
 }
 
 #team{
@@ -174,8 +175,6 @@ a{
   width: 900px;
   overflow: auto;
 }
-
-
 
 #terms{
   position: absolute;
