@@ -15,9 +15,10 @@ function getData(event) {
   const username = document.getElementById("name").value;
   const pass = document.getElementById("pass").value;
   let isuser=false;
-  // let lens=store.length;
+
   const store = JSON.parse(localStorage.getItem("signup"));
-  for (let i = 0; i < store.length; i++) {
+  let lens=store.length;
+  for (let i = 0; i < lens; i++) {
 
     if (store[i].username == username && store[i].password == pass) {
       isuser=true;
