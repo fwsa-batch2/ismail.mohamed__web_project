@@ -1,67 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Smyle Designs add</title>
     <link rel="stylesheet" href="../assets/css/add.css" />
+    <link rel="stylesheet" href="../assets/css/header.css" />
 
 </head>
-<body>
+
+<body class="bg">
+ 
     <div>
+        <div class="top">
+
+            <a href="about.html">
+                <img src="../assets/img/black.png" alt="Logo" class="icon-h" />
+            </a>
+
+            <input class="bar" type="search" placeholder=" Search designs,templates..." id="find" onchange="search()" />
+
+            <input id="search" type="button" value="Search" />
+
+            <a href="designer.html">
+                <img src="../assets/img/pro3.png" alt="Profile" class="icon-a" />
+            </a>
+        </div>
+    </div>
+
+    <div class="box">
+        <img src="./../assets/img/add1.jpg" alt="" id="side-img">
+    <div class="addbox">
         <form onsubmit="submitHandler(event)">
-            <label>Title</label> 
-            <input type="text" id="title" pattern="^[a-zA-Z0-9_]+( [a-zA-Z0-9_]+)*$">
-            <label>Image</label> 
-            <input type="text" id="img">
-            <label>Category</label> 
-            <input type="text" id="type">
-            <label>Designer</label> 
-            <input type="text" id="designer">
+            <p class="text-head">Share your works</p>
+            <p class="text-shead">This will also be used as the thumbnail in feeds.</p>
+            <input type="text" id="title" pattern="^[a-zA-Z0-9_]+( [a-zA-Z0-9_]+)*$" placeholder="Title" required><br>
+          
+            <input type="text" id="img" placeholder="Image URL" required><br>
+        
+            <!-- <input type="d" id="type" placeholder="Category"><br> -->
+            <select id="type" required>
+                <option value="Unknown">Category</option>
+                <option value="LOGO DESIGN">LOGO DESIGN</option>
+                <option value="MINIMAL MOVIE POSTER">MINIMAL MOVIE POSTER</option>
+                <option value="UI DESIGN">UI DESIGN</option>
+            </select>
+          
+            <input type="text" id="designer" placeholder="Designer Name" required><br>
             <button type="submit">Add</button>
         </form>
     </div>
+</div>
     <script>
-        let mt=[];
+        let mt = [];
 
-    function onpage(){
-        let det=JSON.parse(localStorage.getItem("details",));
-        if(det!=null){
-            mt=det
-        }
-        else{
-            localStorage.setItem("details",JSON.stringify([]))
-        }
-        return mt;
-    }
-
-    onpage();
-
-    function submitHandler(event){
-        event.preventDefault();
-        const image=document.getElementById("img").value;
-        const title=document.getElementById("title").value;
-        const type=document.getElementById("type").value;
-        const designer=document.getElementById("designer").value;
-
-        const object={
-            image:image,
-            titleName:title,
-            category:type,
-            designerName:designer
+        function onpage() {
+            let det = JSON.parse(localStorage.getItem("details",));
+            if (det != null) {
+                mt = det
+            }
+            else {
+                localStorage.setItem("details", JSON.stringify([]))
+            }
+            return mt;
         }
 
-        mt.push(object);
-        console.log(mt);
+        onpage();
 
-        localStorage.setItem("details", JSON.stringify(mt));
+        function submitHandler(event) {
+            event.preventDefault();
+            const thumb = document.getElementById("img").value;
+            const title = document.getElementById("title").value;
+            const type = document.getElementById("type").value;
+            const designer = document.getElementById("designer").value;
 
-        window.location.href="./../index.html"
-    }
+            const object = {
+                thumb: thumb,
+                titleName: title,
+                category: type,
+                designerName: designer
+            }
+
+            mt.push(object);
+            console.log(mt);
+
+            localStorage.setItem("details", JSON.stringify(mt));
+
+            window.location.href = "logged.html"
+        }
 
 
     </script>
 
 </body>
+
 </html>

@@ -18,7 +18,7 @@
 }
 
 .bg.fp{
-  background-image: url('../img/forgot.webp');
+  background-image: url('../img/forgot.jpg');
 }
 
 .bg.abt{
@@ -346,6 +346,7 @@ p.text-shead.up{
   text-align: center;
   margin-left: -8px;
   /* border-radius: 10px; */
+  display: inline-block;
   
 }
 
@@ -447,4 +448,23 @@ p.text-shead.up{
   height: 56px;
   padding: 15px;
   border-radius: 20px;
+}
+
+.footer{
+  margin-top: 20%;
+  margin-left: 41%;
+  color: rgb(75, 75, 75);
+}
+
+.addicon{
+  width: 5%;
+  display: inline-block;
+  float: right;
+  position: fixed;
+  margin-left: 72%;
+  margin-top: 24%;
+}
+
+.addicon:hover{
+  opacity: .9;
 }

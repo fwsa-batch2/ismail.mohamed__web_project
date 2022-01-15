@@ -15,9 +15,9 @@ function getData(event) {
   const username = document.getElementById("name").value;
   const pass = document.getElementById("pass").value;
   let isuser=false;
-  let len=store.length;
+  // let lens=store.length;
   const store = JSON.parse(localStorage.getItem("signup"));
-  for (let i = 0; i < len; i++) {
+  for (let i = 0; i < store.length; i++) {
 
     if (store[i].username == username && store[i].password == pass) {
       isuser=true;
@@ -28,7 +28,7 @@ function getData(event) {
 
   if(isuser){
     alert("Hi " + username + ", Welcome to Smyle Designs ");
-      window.location.href = "../index.html";
+      window.location.href = "logged.html";
   }
 
   else{

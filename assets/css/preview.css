@@ -43,12 +43,10 @@ body{
 }
 
 span{
-
     width: 2000px;
 }
 
 #head{
-    /* margin-left: 105px; */
     color: snow;
     font-size: 22px;
     font-weight: bold;
