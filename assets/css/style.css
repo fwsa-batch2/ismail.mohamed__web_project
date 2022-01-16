@@ -269,6 +269,7 @@ p.text-shead.up{
   margin-top: 28px;
   color: white;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .button-up{
@@ -282,6 +283,7 @@ p.text-shead.up{
   margin-left: 250px;
   margin-top: 25px;
   color: white;
+  cursor: pointer;
   font-weight: bold;
 }
 
@@ -296,6 +298,7 @@ p.text-shead.up{
   margin-left: 245px;
   margin-top: 28px;
   color: white;
+  cursor: pointer;
   font-weight: bold;
 }
 
@@ -310,6 +313,7 @@ p.text-shead.up{
   margin-left: 156px;
   margin-top: 28px;
   color: white;
+  cursor: pointer;
   font-weight: bold;
 }
 
