@@ -11,6 +11,7 @@
 * Sign up (completed)
 * Search designs (completed)
 * Filter designs by color (completed)
+* Add designs (completed)
 
 ### Sign in:
 * All inputs fields are mandatory.
@@ -32,4 +33,10 @@
 ##### Colors:
 * If users click a color on the filter box the page will show only the relevant designs for the color.
 
-
+### Add designs:
+* Users need to register to add a design.
+* To add design, go to your account by clicking your avatar in home page (top right corner) then click add button.
+* users will redirect to add design page.
+* In that page all inputs are mandatory.
+* once enter the data then click add button. 
+* the added design will appear on home page feeds.
