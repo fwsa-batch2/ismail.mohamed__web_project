@@ -35,12 +35,11 @@
   width: calc(96%/5);
   margin-top: 20px;
   display: inline-block;
-  /* background-color: bisque; */
+  
 }
 
 #team{
   height: 410px;
-  /* margin-top: 130px; */
   margin-left: 420px;
 }
 

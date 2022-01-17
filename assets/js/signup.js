@@ -44,8 +44,6 @@ function getData(event) {
 
     list.push(obj);
 
-
-
     let local = JSON.stringify(list);
 
     localStorage.setItem("signup", local);
@@ -55,6 +53,7 @@ function getData(event) {
 }
 
 function already(current) {
+
   let isExist = false;
   let len=list.length;
   for (let i = 0; i < len; i++) {
@@ -65,7 +64,6 @@ function already(current) {
     }
   }
   return isExist;
-
 }
 
 function showpassword(){

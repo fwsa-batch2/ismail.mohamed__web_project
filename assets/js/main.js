@@ -21,7 +21,7 @@ function addDesign(){
 
   for(let i=0; i<lsLen; i++ ){
     let index=getLs[i];
-    let prnt=`<a href="../pages/preview.html" ><div class="newly">               
+    emty +=`<a href="../pages/preview.html" ><div class="newly">               
                <img src="${index.thumb}" alt="smile designs logo" class="img-1" >
                 <div class="img-over">
                  <div class="img-title">${index.titleName}</div>
@@ -33,9 +33,8 @@ function addDesign(){
                   <label>${index.designerName}</label>
                 </div>
               </div>`
-    emty=emty+prnt;
+  
   }
   document.getElementById("added").innerHTML=emty;
 }
-
 addDesign();
