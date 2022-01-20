@@ -2,9 +2,9 @@ let list = [];
 
 function onLoad() {
   console.group("onLoad");
-  let a = JSON.parse(localStorage.getItem("signup"));
-  if (a != null) {
-    list = a;
+  let pageLoad = JSON.parse(localStorage.getItem("SIGNUP"));
+  if (pageLoad != null) {
+    list = pageLoad;
   }
   console.groupEnd();
 }
@@ -46,7 +46,7 @@ function getData(event) {
 
     let local = JSON.stringify(list);
 
-    localStorage.setItem("signup", local);
+    localStorage.setItem("SIGNUP", local);
 
     window.location.href = "./signin.html";
   }

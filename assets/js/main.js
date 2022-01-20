@@ -3,10 +3,10 @@ function search(){
   let searchbar=document.getElementById("find").value;
 
   if("logo ideas" == searchbar){
-    window.open('./pages/logoideas.html',"_self")
+    window.open('./../pages/logoideas.html',"_self")
   }
   else if("movie posters" == searchbar){
-    window.open('./pages/movieposters.html',"_self")
+    window.open('./../pages/movieposters.html',"_self")
   }
   
   else{
@@ -15,7 +15,7 @@ function search(){
 }
 
 function addDesign(){
-  let getLs=JSON.parse(localStorage.getItem("details"));
+  let getLs=JSON.parse(localStorage.getItem("DETAILS"));
   let lsLen=getLs.length;
   let emty="";
 
@@ -29,11 +29,10 @@ function addDesign(){
               </div>
               </a>
                 <div>
-                  <img src="./../assets/img/pro1.png" alt="profile pic" id="prof">
-                  <label>${index.designerName}</label>
+                  <img src="./../assets/img/pro3.png" alt="profile pic" id="prof">
+                  <label>Ismail_smile</label>
                 </div>
               </div>`
-  
   }
   document.getElementById("added").innerHTML=emty;
 }

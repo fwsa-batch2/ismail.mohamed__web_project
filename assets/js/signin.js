@@ -1,7 +1,7 @@
 let list = [];
 function onLoad() {
   console.group("onLoad");
-  let a = JSON.parse(localStorage.getItem("signup"));
+  let a = JSON.parse(localStorage.getItem("SIGNUP"));
   if (a != null) {
     list = a;
   }
@@ -16,7 +16,7 @@ function getData(event) {
   const pass = document.getElementById("pass").value;
   let isuser=false;
 
-  const store = JSON.parse(localStorage.getItem("signup"));
+  const store = JSON.parse(localStorage.getItem("SIGNUP"));
   let lens=store.length;
   for (let i = 0; i < lens; i++) {
 

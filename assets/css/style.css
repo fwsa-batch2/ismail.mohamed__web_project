@@ -1,50 +1,47 @@
-*{
+* {
   font-family: Arial, Helvetica, sans-serif;
 }
-.bg{
-  background-image: url('../img/bgwhite.jpg');
-  background-repeat:repeat;
+.bg {
+  background-image: url("../img/bgwhite.jpg");
+  background-repeat: repeat;
   /* background-attachment: fixed; */
   background-size: 100%;
-  }
-
-.bg.reg{
-  background-image: url('../img/bg.jpg');
-
 }
 
-.bg.tc{
-  background-image: url('../img/tc bg.jpg');
+.bg.reg {
+  background-image: url("../img/bg.jpg");
 }
 
-.bg.fp{
-  background-image: url('../img/forgot.jpg');
+.bg.tc {
+  background-image: url("../img/tc bg.jpg");
 }
 
-.bg.abt{
-  background-image: url('../img/bg-abt.jpg');
+.bg.fp {
+  background-image: url("../img/forgot.jpg");
 }
 
-.main{
+.bg.abt {
+  background-image: url("../img/bg-abt.jpg");
+}
+
+.main {
   height: 100%;
   width: 96%;
   margin-left: 3.5%;
 }
 
-.newly{
-  width: calc(96%/5);
+.newly {
+  width: calc(96% / 5);
   margin-top: 20px;
   display: inline-block;
-  
 }
 
-#team{
+#team {
   height: 410px;
   margin-left: 420px;
 }
 
-
-.get{
+.get {
   font-size: 50px;
   font-weight: bold;
   font-family: sans-serif;
@@ -55,17 +52,17 @@
   color: white;
 }
 
-.insp{
+.insp {
   font-size: 40px;
   font-weight: bolder;
   font-family: serif;
   position: absolute;
   margin-top: -13%;
   margin-left: 980px;
-  color: #0B90EC;
+  color: #0b90ec;
 }
 
-.ever{
+.ever {
   font-size: 50px;
   font-weight: bold;
   font-family: sans-serif;
@@ -76,12 +73,12 @@
   color: white;
 }
 
-#prof{
+#prof {
   margin-top: 235px;
   width: 30px;
 }
 
-#list{
+#list {
   position: absolute;
   border-radius: 16px;
   background-color: #e7e7e7;
@@ -95,11 +92,11 @@
   font-weight: bold;
 }
 
-#list:hover{
-    background-color: #f0f0f0;
+#list:hover {
+  background-color: #f0f0f0;
 }
 
-#filter{
+#filter {
   position: absolute;
   border-radius: 16px;
   background-color: #e7e7e7;
@@ -113,42 +110,39 @@
   font-weight: bold;
 }
 
-#filter:hover{
-    background-color: #f0f0f0;
+#filter:hover {
+  background-color: #f0f0f0;
 }
 
-
-
-#side-in{
+#side-in {
   height: 600px;
   margin: 40px;
 }
 
-#side-up{
+#side-up {
   height: 600px;
   margin: 40px;
   opacity: 1;
 }
 
-#side-tc{
+#side-tc {
   position: absolute;
   height: 600px;
   margin-top: 90px;
 }
 
-
-.icon{
+.icon {
   margin-left: 10px;
   margin-top: 6px;
   height: 50px;
 }
 
-a{
-   text-decoration: none;
-   color: #129EFF;
+a {
+  text-decoration: none;
+  color: #129eff;
 }
 
-.box{
+.box {
   background-color: white;
   width: 1200px;
   height: 660px;
@@ -157,7 +151,7 @@ a{
   border-radius: 20px;
 }
 
-.tcbox{
+.tcbox {
   background-color: white;
   width: 1500px;
   height: 760px;
@@ -166,16 +160,16 @@ a{
   border-radius: 20px;
 }
 
-.tac{
+.tac {
   position: absolute;
   margin-top: 45px;
   margin-left: 584px;
-  height:630px;
+  height: 630px;
   width: 900px;
   overflow: auto;
 }
 
-#terms{
+#terms {
   position: absolute;
   font-size: 50px;
   font-weight: bolder;
@@ -184,7 +178,7 @@ a{
   margin-left: 650px;
 }
 
-#about{
+#about {
   position: absolute;
   font-size: 50px;
   font-weight: bolder;
@@ -193,47 +187,47 @@ a{
   margin-left: 770px;
 }
 
-.signin{
+.signin {
   margin-top: 20px;
   position: absolute;
 }
 
-.signup{
+.signup {
   margin-top: 4px;
   position: absolute;
 }
 
-p.text-head{
+p.text-head {
   margin-left: 0px;
   font-size: 30px;
   font-weight: bold;
 }
 
-p.text-head-pswd{
+p.text-head-pswd {
   margin-top: 180px;
   margin-left: 0px;
   font-size: 30px;
   font-weight: bold;
 }
 
-p.text-shead{
+p.text-shead {
   margin-left: 0px;
   font-size: 15px;
   margin-bottom: 50px;
 }
 
-p.text-shead-pswd{
+p.text-shead-pswd {
   margin-top: -15px;
   margin-left: 0px;
   font-size: 15px;
   margin-bottom: 50px;
 }
 
-p.text-shead.up{
+p.text-shead.up {
   margin-bottom: 10px;
 }
 
-.textbox{
+.textbox {
   border-radius: 25px;
   margin-top: 35px;
   height: 14px;
@@ -245,20 +239,20 @@ p.text-shead.up{
   padding: 20px;
 }
 
-#icon{
+#icon {
   margin-left: -45px;
-  opacity: .3;
+  opacity: 0.3;
   font-size: 19px;
 }
 
-#icon:hover{
-  color: #129EFF;
-  opacity: .8;
+#icon:hover {
+  color: #129eff;
+  opacity: 0.8;
 }
 
-.button-in{
+.button-in {
   border-radius: 20px;
-  background-color: #129EFF;
+  background-color: #129eff;
   border-style: none;
   height: 42px;
   width: 110px;
@@ -271,9 +265,9 @@ p.text-shead.up{
   cursor: pointer;
 }
 
-.button-up{
+.button-up {
   border-radius: 20px;
-  background-color: #129EFF;
+  background-color: #129eff;
   border-style: none;
   height: 42px;
   width: 152px;
@@ -286,9 +280,9 @@ p.text-shead.up{
   font-weight: bold;
 }
 
-.button-pswd{
+.button-pswd {
   border-radius: 20px;
-  background-color: #129EFF;
+  background-color: #129eff;
   border-style: none;
   height: 42px;
   width: 152px;
@@ -301,9 +295,9 @@ p.text-shead.up{
   font-weight: bold;
 }
 
-.button-otp{
+.button-otp {
   border-radius: 20px;
-  background-color: #129EFF;
+  background-color: #129eff;
   border-style: none;
   height: 42px;
   width: 152px;
@@ -316,50 +310,49 @@ p.text-shead.up{
   font-weight: bold;
 }
 
-#back{
+#back {
   position: absolute;
   margin-top: 120px;
   margin-left: 1310px;
 }
 
-#tac{
+#tac {
   position: absolute;
   margin-top: 710px;
   margin-left: 1310px;
 }
 
-.link-icon{
+.link-icon {
   height: 30px;
   margin-top: 45px;
   margin-left: 75px;
 }
 
-.invalid{
+.invalid {
   font-size: 15px;
   margin-left: 15px;
 
   color: rgb(248, 31, 85);
 }
 
-.sidepro{
+.sidepro {
   background-color: rgb(247, 247, 247);
   width: 400px;
   height: 700px;
-  margin-top:-4px;
+  margin-top: -4px;
   text-align: center;
   margin-left: -8px;
   /* border-radius: 10px; */
   display: inline-block;
-  
 }
 
-.profilepic{
+.profilepic {
   width: 200px;
   margin-top: -100px;
   /* margin-left: 125px; */
 }
 
-#banner{
+#banner {
   width: 1840px;
   height: 300px;
   margin-top: 80px;
@@ -367,27 +360,25 @@ p.text-shead.up{
   /* position: fixed; */
 }
 
-.follow{
+.follow {
   height: 50px;
   width: 170px;
   border-radius: 30px;
   border-style: none;
-  background-color:#129EFF;
+  background-color: #129eff;
   font-size: 18px;
   color: white;
   font-weight: bold;
   padding: 10px;
-
-
 }
 
-.follow:hover{
-  background-color: #0B90EC;
+.follow:hover {
+  background-color: #0b90ec;
   /* color: white; */
 }
 
-.adbanner{
-  background-color: rgb(255, 255, 255, .7);
+.adbanner {
+  background-color: rgb(255, 255, 255, 0.7);
   width: 90%;
   height: 400px;
   margin-left: 65px;
@@ -396,8 +387,8 @@ p.text-shead.up{
   padding: 30px;
 }
 
-.filter{
-  margin-left:1%;
+.filter {
+  margin-left: 1%;
   border-radius: 12px;
   width: 32px;
   height: 30px;
@@ -405,46 +396,65 @@ p.text-shead.up{
   /* margin-top: 7px; */
 }
 
-.colortext{
-  font-weight: bold;
+.colortext {
+  font-weight: 700;
   font-size: 25px;
-  opacity: .6;
+  opacity: 0.6;
   margin-right: 10px;
+  margin-bottom: 20px;
 }
 
-.filter.red{
+.filter.red {
   background-color: rgb(255, 51, 51);
 }
-
-.filter.yellow{
-  background-color: rgb(238, 202, 0);
+.filter.red:hover {
+  opacity: 0.8;
 }
 
-.filter.blue{
-  background-color:rgb(0, 174, 255);
+.filter.yellow {
+  background-color: #ffd400;
+}
+.filter.yellow:hover {
+  opacity: 0.8;
 }
 
-.filter.green{
-  background-color:rgb(16, 192, 0);
+.filter.blue {
+  background-color: rgb(0, 174, 255);
 }
-
-.filter.violet{
-  background-color:rgb(146, 0, 204);
+.filter.blue:hover {
+  opacity: 0.8;
 }
-
-.filter.orange{
-  background-color:rgb(243, 117, 0);
+.filter.green {
+  background-color: rgb(16, 192, 0);
 }
-
-.filter.black{
-  background-color:rgb(0, 0, 0);
+.filter.green:hover {
+  opacity: 0.8;
 }
-
-.filter.white{
-  background-color:rgb(255, 255, 255);
+.filter.violet {
+  background-color: rgb(146, 0, 204);
 }
-
-.colorbox{
+.filter.violet:hover {
+  opacity: 0.8;
+}
+.filter.orange {
+  background-color: rgb(243, 117, 0);
+}
+.filter.orange:hover {
+  opacity: 0.8;
+}
+.filter.black {
+  background-color: rgb(0, 0, 0);
+}
+.filter.black:hover {
+  opacity: 0.8;
+}
+.filter.white {
+  background-color: rgb(255, 255, 255);
+}
+.filter.white:hover {
+  opacity: 0.8;
+}
+.colorbox {
   background-color: rgba(93, 93, 93, 0.1);
   margin-left: 3.5%;
   width: 320px;
@@ -453,13 +463,13 @@ p.text-shead.up{
   border-radius: 20px;
 }
 
-.footer{
+.footer {
   margin-top: 20%;
   margin-left: 41%;
   color: rgb(75, 75, 75);
 }
 
-.addicon{
+.addicon {
   width: 5%;
   display: inline-block;
   float: right;
@@ -468,6 +478,14 @@ p.text-shead.up{
   margin-top: 24%;
 }
 
-.addicon:hover{
-  opacity: .9;
+.addicon:hover {
+  opacity: 0.9;
+}
+
+.refresh {
+  font-weight: 300;
+  font-size: 30px;
+  margin-left: 210px;
+  cursor: pointer;
+  opacity: 0.6;
 }

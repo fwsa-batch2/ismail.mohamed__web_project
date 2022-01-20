@@ -22,10 +22,10 @@
             <br>
             <label id="invalidmail" class="invalid"></label>
             <br>
-            <input type="password" placeholder="Password" class="textbox" id="pass" minlength="8" maxlength="20" required>
+            <input type="password" placeholder="Password" class="textbox" id="pass" pattern="[\w]{6}" required>
             <span id="icon"><em class="fa fa-eye" onclick="showpassword()" ></em></span>
             <br>
-            <input type="password" placeholder="Confirm Password" class="textbox" id="cpass" minlength="8" maxlength="20" required>
+            <input type="password" placeholder="Confirm Password" class="textbox" id="cpass" pattern="[\w]{6}"  required>
             <br>
             <label id="invalidpass" class="invalid"></label>
             <br>

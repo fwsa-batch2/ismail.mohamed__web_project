@@ -36,7 +36,7 @@
         <form onsubmit="submitHandler(event)">
             <p class="text-head">Share your works</p>
             <p class="text-shead">This will also be used as the thumbnail in feeds.</p>
-            <input type="text" id="title" pattern="^[a-zA-Z0-9_]+( [a-zA-Z0-9_]+)*$" placeholder="Title" required><br>
+            <input type="text" id="title" pattern="[A-Za-z0-9]{3,26}" placeholder="Title" required><br>
           
             <input type="text" id="img" placeholder="Image URL" required><br>
 
@@ -46,8 +46,7 @@
                 <option value="MINIMAL MOVIE POSTER">MINIMAL MOVIE POSTER</option>
                 <option value="UI DESIGN">UI DESIGN</option>
             </select>
-          
-            <input type="text" id="designer" placeholder="Designer Name" required><br>
+
             <button type="submit">Add</button>
         </form>
     </div>
@@ -73,13 +72,12 @@
             const thumb = document.getElementById("img").value;
             const title = document.getElementById("title").value;
             const type = document.getElementById("type").value;
-            const designer = document.getElementById("designer").value;
+
 
             const object = {
                 thumb: thumb,
                 titleName: title,
                 category: type,
-                designerName: designer
             }
 
             mt.push(object);

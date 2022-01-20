@@ -19,7 +19,6 @@ function filter(value){
     }
   
     else if(value == "blue"){
-  
       document.getElementById("red").style.display = "none";
       document.getElementById("orange1").style.display = "none";
       document.getElementById("orange2").style.display = "none";
@@ -31,8 +30,6 @@ function filter(value){
       document.getElementById("white3").style.display="none";
       document.getElementById("black1").style.display="none";
       document.getElementById("black2").style.display="none";
-  
-  
     }
   
   
@@ -53,7 +50,6 @@ function filter(value){
     }
   
     else if(value == "white"){
-  
       document.getElementById("red").style.display = "none";
       document.getElementById("blue1").style.display="none";
       document.getElementById("blue2").style.display="none";
@@ -79,9 +75,8 @@ function filter(value){
       document.getElementById("white2").style.display="none";
       document.getElementById("white3").style.display="none";
     }
-  
-  
-  
-  
-  
+  }
+
+  function refresh(){
+    window.open("./../pages/logoideas.html","_self");
   }
