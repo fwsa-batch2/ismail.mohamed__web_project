@@ -55,12 +55,12 @@
         let mt = [];
 
         function onpage() {
-            let det = JSON.parse(localStorage.getItem("details",));
+            let det = JSON.parse(localStorage.getItem("DETAILS",));
             if (det != null) {
                 mt = det
             }
             else {
-                localStorage.setItem("details", JSON.stringify([]))
+                localStorage.setItem("DETAILS", JSON.stringify([]))
             }
             return mt;
         }
@@ -83,7 +83,7 @@
             mt.push(object);
             console.log(mt);
 
-            localStorage.setItem("details", JSON.stringify(mt));
+            localStorage.setItem("DETAILS", JSON.stringify(mt));
 
             window.location.href = "logged.html"
         }

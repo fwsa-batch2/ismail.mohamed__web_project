@@ -22,10 +22,10 @@
             <br>
             <label id="invalidmail" class="invalid"></label>
             <br>
-            <input type="password" placeholder="Password" class="textbox" id="pass" pattern="[\w]{6}" required>
+            <input type="password" placeholder="Password" class="textbox" id="pass" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
             <span id="icon"><em class="fa fa-eye" onclick="showpassword()" ></em></span>
             <br>
-            <input type="password" placeholder="Confirm Password" class="textbox" id="cpass" pattern="[\w]{6}"  required>
+            <input type="password" placeholder="Confirm Password" class="textbox" id="cpass" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"  required>
             <br>
             <label id="invalidpass" class="invalid"></label>
             <br>

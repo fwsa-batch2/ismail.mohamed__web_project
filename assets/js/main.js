@@ -30,7 +30,7 @@ function addDesign(){
               </a>
                 <div>
                   <img src="./../assets/img/pro3.png" alt="profile pic" id="prof">
-                  <label>Ismail_smile</label>
+                  <p style="margin-left: 40px; margin-top: -26px;">Ismail_smile</p>
                 </div>
               </div>`
   }
